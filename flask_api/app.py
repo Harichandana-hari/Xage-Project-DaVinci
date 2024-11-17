@@ -7,7 +7,7 @@ from skimage.transform import resize
 import os
 
 app = Flask(__name__)
-CORS(app, resources={r"/predict": {"origins": "https://xage-homepage-react.onrender.com/"}})
+CORS(app)
  # Correct way to enable CORS
 
 # Load the trained model
