@@ -27,8 +27,10 @@ def preprocess_image(filepath):
 def index():
     return "Welcome to the Bone Age Prediction API!"
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['OPTIONS', 'POST'])
 def predict():
+    if request.method == 'OPTIONS':
+        return '', 200 
     # Ensure an image is provided in the request
     if 'image' not in request.files:
         return jsonify({"error": "No image file provided"}), 400
