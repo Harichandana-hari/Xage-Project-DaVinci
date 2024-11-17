@@ -72,4 +72,4 @@ def predict():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':  # Corrected from '_main_' to '__main__'
-    app.run(debug=Falsealse)
+    app.run(debug=False)
