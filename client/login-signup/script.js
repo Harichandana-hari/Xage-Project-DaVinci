@@ -28,7 +28,7 @@ signupForm.addEventListener('submit', async (event) => {
     };
 
     try {
-        const response = await fetch('https://xage-login-signup-express.vercel.app/signup', {
+        const response = await fetch('https://xage-loginorsignup-express.onrender.com/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ signupForm.addEventListener('submit', async (event) => {
         if (response.status === 201) {
             // Provide feedback to the user in a better way than alert
             alert('Signup successful!');
-            window.location.href = 'https://xage-homepage.vercel.app/'; 
+            window.location.href = 'https://xage-homepage-react.onrender.com/'; 
         } else {
             throw new Error(result.message || 'Signup failed');
         }
@@ -63,7 +63,7 @@ loginForm.addEventListener('submit', async (event) => {
     console.log("Login form data:", formData);
 
     try {
-        const response = await fetch('https://xage-login-signup-express.vercel.app/login', {
+        const response = await fetch('https://xage-loginorsignup-express.onrender.com/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ loginForm.addEventListener('submit', async (event) => {
         if (response.status === 200) {
             alert('Login successful!');
             // Redirecting to the main page after successful login
-            window.location.href = 'https://xage-homepage.vercel.app/';
+            window.location.href = 'https://xage-homepage-react.onrender.com/';
         } else {
             throw new Error(result.message || 'Login failed');
         }

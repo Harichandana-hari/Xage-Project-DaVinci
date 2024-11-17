@@ -7,7 +7,7 @@ const authRoutes=require("./routes/auth")
 //middleware
 app.use(express.json());
 const corsOptions = {
-    origin: 'https://xage-login-or-signup.vercel.app', // Replace with your frontend origin
+    origin: 'https://xage-loginorsignup.onrender.com', // Replace with your frontend origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true, // Allow cookies/credentials
@@ -28,7 +28,7 @@ mongoose.connect(db)
     .then(()=>{
         console.log("Connected to mongodb");
         app.listen(PORT,()=>{
-            console.log(`Server is running on https://xage-login-express.vercel.app/`);
+            console.log(`Server is running on https://xage-loginorsignup-express.onrender.com/`);
         });
     }).catch((err)=>{
         console.log("Failed to connect to mongodb",err);
