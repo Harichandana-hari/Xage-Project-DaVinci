@@ -13,7 +13,7 @@ def add_cors_headers(response):
     response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
     return response
 # Load the trained model
-with open('d:/Code/Da vinci/Xage project root/flask_api/bone_age_gender_model.pkl', 'rb') as f:
+with open('bone_age_gender_model.pkl', 'rb') as f:
     clf = pickle.load(f)
 
 IMG_SIZE = (128, 128)
