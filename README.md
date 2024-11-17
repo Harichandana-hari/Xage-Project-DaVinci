@@ -87,10 +87,17 @@ The dataset comprises X-ray images annotated with bone age and gender labels:
    ```bash
    cd react-app
    npm install
-4.  **Start the React.js frontend**
+4. **Install additional Node.js dependencies**
+   ```bash
+   npm install express
+   npm install mongoose
+   npm install bcrypt
+   npm install validator
+
+5.  **Start the React.js frontend**
     ``` bash
        npm start
-5. **Run the Flask backend**
+6. **Run the Flask backend**
    ```bash
    python app.py
 
@@ -108,7 +115,12 @@ The dataset comprises X-ray images annotated with bone age and gender labels:
 
 ## **Project Structure**
 Bone-Age-Gender-Prediction   
-├── bone_age_gender_model.pkl     
+├── bone_age_gender_model.pkl   
+├──images  
+├──   ├──Sign_Up.png  
+├──   ├──Homepage.png  
+├──   ├──Upload.png  
+├──   ├──Output.png  
 ├── app.py                        
 ├── requirements.txt              
 ├── templates                     
