@@ -7,7 +7,7 @@ const authRoutes=require("./routes/auth")
 //middleware
 app.use(express.json());
 const corsOptions = {
-    origin: 'http://127.0.0.1:5501', // Replace with your frontend origin
+    origin: 'https://xage-login-or-signup.vercel.app/', // Replace with your frontend origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true, // Allow cookies/credentials
