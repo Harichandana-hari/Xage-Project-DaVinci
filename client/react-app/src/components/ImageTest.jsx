@@ -50,7 +50,7 @@ export const ImageTest = () => {
       formData.append('image', selectedFile); // Add the selected image file to the form data
 
       try {
-        const response = await fetch('http://127.0.0.1:5000/predict', { // Replace with your backend URL
+        const response = await fetch('https://xage-flask-backend.vercel.app/predict', { // Replace with your backend URL
           method: 'POST',
           body: formData,
         });
