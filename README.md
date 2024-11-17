@@ -15,7 +15,7 @@
 ---
 
 ## **Objective**
-Develop a machine learning model to predict **bone age** (in months) and classify **gender** (Male/Female) from hand X-ray images.  
+Develop a machine learning model to predict **bone age** (in years) and classify **gender** (Male/Female) from hand X-ray images.  
 
 ---
 
@@ -27,7 +27,7 @@ This project combines multi-output regression and classification techniques to p
 ---
 
 ## **Key Features**
-- **Bone Age Prediction**: Outputs the predicted bone age in months.  
+- **Bone Age Prediction**: Outputs the predicted bone age in years.  
 - **Gender Classification**: Classifies the gender as Male or Female.  
 - **User Authentication**: Secured with **bcrypt hashing**.  
 - **Modern Frontend**: Built with React.js for a responsive and interactive user experience.  
@@ -66,7 +66,7 @@ The dataset comprises X-ray images annotated with bone age and gender labels:
 
 ### **Prediction Result**
 ![Prediction Result Screenshot](Output.png "Prediction Result")
-- Displays bone age (in months) and classified gender (Male/Female) after analyzing the X-ray.  
+- Displays bone age (in years) and classified gender (Male/Female) after analyzing the X-ray.  
 
 ---
 
