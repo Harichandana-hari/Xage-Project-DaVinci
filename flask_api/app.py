@@ -7,8 +7,11 @@ from skimage.transform import resize
 import os
 
 app = Flask(__name__)
-CORS(app, resources={r"/predict": {"origins": "https://xage-homepage.vercel.app"}})  # Enable CORS for all routes
-
+def add_cors_headers(response):
+    response.headers["Access-Control-Allow-Origin"] = "https://xage-homepage.vercel.app"
+    response.headers["Access-Control-Allow-Methods"] = "POST, GET, OPTIONS"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
+    return response
 # Load the trained model
 with open('d:/Code/Da vinci/Xage project root/flask_api/bone_age_gender_model.pkl', 'rb') as f:
     clf = pickle.load(f)
