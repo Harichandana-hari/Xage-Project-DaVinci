@@ -46,17 +46,27 @@ The dataset comprises X-ray images annotated with bone age and gender labels:
 ## **Application Features**
 
 ### **Login Page**
+![Sign up](Sign_up.png "Sign Up Screenshot")
 - Developed using **HTML**, **CSS**, and **JavaScript**.  
 - **Secure Passwords**: Uses bcrypt hashing for password security.  
 
 ### **Homepage**
+![Homepage Screenshot](Homepage.png "Homepage")
 - **React.js**-based interface for uploading X-ray images and viewing predictions.  
 
 ### **Backend**
 - A **Flask** API integrates the machine learning model with the frontend.  
 
 ### **Database**
-- **MongoDB** stores user credentials and related data.  
+- **MongoDB** stores user credentials and related data.
+
+### **Upload X-Ray**
+![User Upload Prompt](Upload.png "User Upload Prompt Screenshot")
+- Log in and upload an X-ray image to receive predictions.  
+
+### **Prediction Result**
+![Prediction Result Screenshot](Output.png "Prediction Result")
+- Displays bone age (in months) and classified gender (Male/Female) after analyzing the X-ray.  
 
 ---
 
