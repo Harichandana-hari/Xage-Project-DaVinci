@@ -28,7 +28,7 @@ mongoose.connect(db)
     .then(()=>{
         console.log("Connected to mongodb");
         app.listen(PORT,()=>{
-            console.log(`Server is running on http://localhost:${PORT}`);
+            console.log(`Server is running on https://xage-login-express.vercel.app/`);
         });
     }).catch((err)=>{
         console.log("Failed to connect to mongodb",err);

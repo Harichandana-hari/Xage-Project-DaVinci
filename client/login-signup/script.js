@@ -28,7 +28,7 @@ signupForm.addEventListener('submit', async (event) => {
     };
 
     try {
-        const response = await fetch('http://localhost:3001/signup', {
+        const response = await fetch('https://xage-login-express.vercel.app/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ loginForm.addEventListener('submit', async (event) => {
     console.log("Login form data:", formData);
 
     try {
-        const response = await fetch('http://localhost:3001/login', {
+        const response = await fetch('https://xage-login-express.vercel.app//login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
