@@ -1,0 +1,4 @@
+.venv
+Age_detection.py
+boneage-test-dataset.csv
+boneage-training-dataset.csv

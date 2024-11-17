@@ -41,7 +41,7 @@ signupForm.addEventListener('submit', async (event) => {
         if (response.status === 201) {
             // Provide feedback to the user in a better way than alert
             alert('Signup successful!');
-            window.location.href = 'http://localhost:3000'; 
+            window.location.href = 'https://xage-homepage.vercel.app/'; 
         } else {
             throw new Error(result.message || 'Signup failed');
         }
@@ -76,7 +76,7 @@ loginForm.addEventListener('submit', async (event) => {
         if (response.status === 200) {
             alert('Login successful!');
             // Redirecting to the main page after successful login
-            window.location.href = 'http://localhost:3000';
+            window.location.href = 'https://xage-homepage.vercel.app/';
         } else {
             throw new Error(result.message || 'Login failed');
         }

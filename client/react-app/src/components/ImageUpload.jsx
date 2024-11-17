@@ -100,7 +100,6 @@ export const ImageUpload = () => {
           ) : (
             <div className="InstrText">
               Click or drag an image to this area
-              <p>Accepted file types: DICOM, JPG, BMP, PNG</p>
             </div>
           )}
 

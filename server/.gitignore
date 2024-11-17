@@ -1,0 +1,6 @@
+node_modules
+.env
+index.html
+script.js
+style.css
+api_test.http
