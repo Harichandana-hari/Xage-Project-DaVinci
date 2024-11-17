@@ -136,7 +136,15 @@ Bone-Age-Gender-Prediction
 ├── templates                     
 ├── static                        
 ├── react-app                    
-└── README.md                    
+└── README.md       
+
+# Test Image and Project Link
+
+### Test Image
+![Test Image](x_ray2.jpg "Test Image")
+
+### Project Link
+[Click here to visit our project](https://xage-loginorsignup.onrender.com/)
 
 ## **Acknowledgments**
 1.**Dataset:**
