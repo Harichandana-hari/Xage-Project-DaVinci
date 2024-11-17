@@ -7,7 +7,8 @@ from skimage.transform import resize
 import os
 
 app = Flask(__name__)
-CORS(app)  # Correct way to enable CORS
+CORS(app, resources={r"/predict": {"origins": "https://xage-homepage-react.onrender.com/"}})
+ # Correct way to enable CORS
 
 # Load the trained model
 with open('bone_age_gender_model.pkl', 'rb') as f:
@@ -69,4 +70,4 @@ def predict():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':  # Corrected from '_main_' to '__main__'
-    app.run(debug=True)
+    app.run(debug=false)
