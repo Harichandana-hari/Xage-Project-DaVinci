@@ -1,5 +1,14 @@
 { 
     "version": 2,
-    "builds" : [{ "src" : "app.py", "use": "@vercel/python"}] ,
+    "builds" : [
+        { 
+            "src" : "app.py", 
+            "use": "@vercel/python",
+            "config": {
+                "pythonVersion": "3.10"
+            } 
+        }
+    ] ,
+    "buildCommand": "pip install --disable-pip-version-check --target . --upgrade -r /vercel/path0/flask_api/requirements.txt -v",
     "routes": [{ "src": "/(.*)", "dest": "app.py" }] 
 }
