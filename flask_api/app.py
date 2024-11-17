@@ -7,11 +7,11 @@ from skimage.transform import resize
 import os
 
 app = Flask(__name__)
-def add_cors_headers(response):
-    response.headers["Access-Control-Allow-Origin"] = "https://xage-homepage.vercel.app"
-    response.headers["Access-Control-Allow-Methods"] = "POST, GET, OPTIONS"
-    response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization"
-    return response
+def add_cors_headers(res):
+    res.header('Access-Control-Allow-Origin', 'https://xage-homepage-react.onrender.com'); 
+    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    return res
 # Load the trained model
 with open('bone_age_gender_model.pkl', 'rb') as f:
     clf = pickle.load(f)
