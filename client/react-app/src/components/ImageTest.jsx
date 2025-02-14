@@ -112,7 +112,7 @@ export const ImageTest = () => {
 
           <div className="button-container">
             <button onClick={handleBackClick} className="back-button">Back</button>
-            <button onClick={handleUploadClick} className="upload-button">Upload</button>
+            <button onClick={handleUploadClick} className="upload-button">Predict</button>
           </div>
 
           {predictionResult && (
